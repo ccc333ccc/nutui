@@ -14,7 +14,8 @@ const defaultOptions = {
   // onOpened: null,
   // textTimer: null,
   teleport: '',
-  unmount: new Function()
+  // unmount: new Function(),
+  unmount: ()=>{}
 }
 type Id = { id: string }
 type TDOptions = Partial<typeof defaultOptions & Id>
